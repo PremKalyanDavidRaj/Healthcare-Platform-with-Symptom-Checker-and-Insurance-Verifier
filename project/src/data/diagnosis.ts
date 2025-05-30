@@ -1,0 +1,22 @@
+export const diagnosisCodes = [
+  { code: 'J01.00', description: 'Acute maxillary sinusitis, unspecified' },
+  { code: 'J02.9', description: 'Acute pharyngitis, unspecified' },
+  { code: 'J03.90', description: 'Acute tonsillitis, unspecified' },
+  { code: 'J11.1', description: 'Influenza due to unidentified influenza virus with other respiratory manifestations' },
+  { code: 'J18.9', description: 'Pneumonia, unspecified organism' },
+  { code: 'J40', description: 'Bronchitis, not specified as acute or chronic' },
+  { code: 'J45.909', description: 'Unspecified asthma, uncomplicated' },
+  { code: 'K21.9', description: 'Gastro-esophageal reflux disease without esophagitis' },
+  { code: 'K29.70', description: 'Gastritis, unspecified, without bleeding' },
+  { code: 'K59.00', description: 'Constipation, unspecified' },
+  { code: 'L03.90', description: 'Cellulitis, unspecified' },
+  { code: 'L20.89', description: 'Other atopic dermatitis' },
+  { code: 'L30.9', description: 'Dermatitis, unspecified' },
+  { code: 'M25.50', description: 'Pain in unspecified joint' },
+  { code: 'M54.5', description: 'Low back pain' },
+  { code: 'N39.0', description: 'Urinary tract infection, site not specified' },
+  { code: 'R10.9', description: 'Unspecified abdominal pain' },
+  { code: 'R51', description: 'Headache' },
+  { code: 'Z00.00', description: 'Encounter for general adult medical examination without abnormal findings' },
+  { code: 'Z23', description: 'Encounter for immunization' }
+];

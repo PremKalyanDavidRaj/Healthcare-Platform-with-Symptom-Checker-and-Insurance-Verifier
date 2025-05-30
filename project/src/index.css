@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 10 132 255;      /* #0A84FF */
+    --color-primary-light: 172 217 255;
+    --color-secondary: 76 217 100;    /* #4CD964 */
+    --color-secondary-light: 220 255 226;
+    --color-accent: 255 149 0;        /* #FF9500 */
+    --color-success: 52 199 89;       /* #34C759 */
+    --color-warning: 255 204 0;       /* #FFCC00 */
+    --color-error: 255 59 48;         /* #FF3B30 */
+    --color-info: 0 122 255;          /* #007AFF */
+    --color-background: 248 250 252;  /* #F8FAFC */
+    --color-surface: 255 255 255;     /* #FFFFFF */
+    --color-text: 28 28 30;           /* #1C1C1E */
+    --color-text-secondary: 99 99 102; /* #636366 */
+  }
+
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  body {
+    @apply bg-background text-text antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-medium leading-tight;
+  }
+
+  h1 {
+    @apply text-3xl md:text-4xl;
+  }
+
+  h2 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  h3 {
+    @apply text-xl md:text-2xl;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-primary/90;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-white hover:bg-secondary/90;
+  }
+
+  .btn-outline {
+    @apply border border-gray-300 bg-background hover:bg-accent/10 hover:text-accent;
+  }
+
+  .btn-ghost {
+    @apply hover:bg-accent/10 hover:text-accent;
+  }
+
+  .card {
+    @apply rounded-xl bg-white p-6 shadow-sm transition-shadow hover:shadow-md;
+  }
+
+  .input {
+    @apply rounded-md border border-gray-300 px-3 py-2 text-sm transition-colors focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary;
+  }
+
+  .badge {
+    @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium;
+  }
+
+  .badge-success {
+    @apply bg-success/10 text-success;
+  }
+
+  .badge-warning {
+    @apply bg-warning/10 text-warning;
+  }
+
+  .badge-error {
+    @apply bg-error/10 text-error;
+  }
+
+  .badge-info {
+    @apply bg-info/10 text-info;
+  }
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(10px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.4s ease-out forwards;
+}
